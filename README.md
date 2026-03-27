@@ -2,7 +2,7 @@
 
 Projeto de automação E2E com Cypress para validar a funcionalidade de pesquisa de artigos no Blog do Agi (`https://blogdoagi.com.br/`).
 
-## Cenários automatizados
+## 🚀 Cenários automatizados
 
 Foram automatizados cenários relevantes da busca de artigos:
 
@@ -36,18 +36,18 @@ Foram automatizados cenários relevantes da busca de artigos:
      - Primeiro resultado possui link válido.
      - Página do artigo abre com título visível.
 
-## Stack
+## 🛠️ Stack
 
 - Node.js
 - Cypress
 - GitHub Actions (execução em CI)
 
-## Pré-requisitos
+## 📋 Pré-requisitos
 
 - Node.js 18+ (recomendado 20)
 - npm
 
-## Instalação
+## ⚙️ Instalação
 
 ```bash
 npm install
@@ -70,7 +70,7 @@ npm run cy:run
 npm run cy:open
 ```
 
-## Estrutura
+## 📂 Estrutura
 
 - `cypress/e2e/busca-artigos-blog-agi.cy.js`: testes E2E da busca
 - `cypress/fixtures/`: Dados de entrada e saída esperadas 
