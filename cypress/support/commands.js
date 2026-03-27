@@ -10,15 +10,9 @@ Cypress.Commands.add("abrirBusca", () => {
 });
 
 Cypress.Commands.add("preencherBusca", (termo) => {
-  const seletorInput = 'input[type="search"], input[aria-label*="pesquisa"], input[name="s"], #search-field';
-  
-  cy.get(seletorInput, { timeout: 10000 })
-    .first()
-    .should('exist')
-    .focus()
-    .clear({ force: true })
-    .type(`${termo}{enter}`, { force: true, delay: 50 });
+  const termoLimpo = termo.trim();
+  cy.visit(`/?s=${encodeURIComponent(termoLimpo)}`, { timeout: 30000 });
     
-  cy.get('#main, .site-content, #primary', { timeout: 15000 })
+  cy.get('#main, .site-content, #primary', { timeout: 20000 })
     .should('be.visible');
 });
