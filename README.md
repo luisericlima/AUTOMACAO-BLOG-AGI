@@ -79,10 +79,11 @@ npm run cy:open
 
 ## 📂 Estrutura
 
-- `cypress/e2e/busca-artigos-blog-agi.cy.js`: testes E2E da busca
+- `cypress/e2e/busca-artigos-blog-agi.cy.js`: Testes E2E da busca
 - `cypress/fixtures/`: Dados de entrada e saída esperadas 
 - `cypress.config.js`: configuração do Cypress
-- `.github/workflows/cypress.yml`: pipeline para execução automatizada no GitHub Actions
+- `.github/workflows/cypress.yml`: Pipeline para execução automatizada no GitHub Actions
+- `evidencia-execucao`: Contém evidência da execução bem sucedida
 
 ## CI
 
