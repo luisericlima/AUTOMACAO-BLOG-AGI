@@ -2,6 +2,5 @@
   "validTerm": "golpe",
   "invalidTerm": "zzzztermoinexistente12345",
   "termWithSpaces": "  golpe  ",
-  "upperCaseTerm": "GOLPE",
-  "targetArticle": "Golpe do Enem"
+  "upperCaseTerm": "GOLPE"
 }

@@ -36,6 +36,13 @@ Foram automatizados cenários relevantes da busca de artigos:
      - Primeiro resultado possui link válido.
      - Página do artigo abre com título visível.
 
+## ✅ Resultados dos Testes
+Abaixo, a evidência da execução bem-sucedida de todos os cenários automatizados:
+
+<div align="center">
+  <img src="evidencia-execucao/evidencia-execucao.png" alt="Resultado da Execução dos Testes" width="600px">
+</div>
+
 ## 🛠️ Stack
 
 - Node.js

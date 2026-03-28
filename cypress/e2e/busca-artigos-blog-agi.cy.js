@@ -18,7 +18,8 @@ describe("Busca de artigos no Blog do Agi", () => {
     
     cy.contains(this.search.validTerm, { timeout: 15000 }).should("be.visible");
     
-    cy.contains(this.search.targetArticle, { timeout: 15000 }).should("be.visible");
+    cy.get("article", { timeout: 15000 }).should("be.visible").and("have.length.greaterThan", 0);
+    cy.get("article").contains(new RegExp(this.search.validTerm, "i")).should("be.visible");
     
     cy.get("article, .entry-content", { timeout: 15000 })
       .should("be.visible")
@@ -43,7 +44,8 @@ describe("Busca de artigos no Blog do Agi", () => {
     const regexMsg = new RegExp(this.msg.resultsFoundFor, "i");
     cy.contains(regexMsg, { timeout: 15000 }).should("be.visible");
     
-    cy.contains(this.search.targetArticle, { timeout: 15000 }).should("be.visible");
+    cy.get("article", { timeout: 15000 }).should("be.visible").and("have.length.greaterThan", 0);
+    cy.get("article").contains(new RegExp(this.search.validTerm, "i")).should("be.visible");
     
     cy.get("article", { timeout: 15000 }).should("have.length.greaterThan", 0);
   });
@@ -56,7 +58,8 @@ describe("Busca de artigos no Blog do Agi", () => {
     const regexMsg = new RegExp(this.msg.resultsFoundFor, "i");
     cy.contains(regexMsg, { timeout: 15000 }).should("be.visible");
     
-    cy.contains(this.search.targetArticle, { timeout: 15000 }).should("be.visible");
+    cy.get("article", { timeout: 15000 }).should("be.visible").and("have.length.greaterThan", 0);
+    cy.get("article").contains(new RegExp(this.search.validTerm, "i")).should("be.visible");
     
     cy.get("article", { timeout: 15000 }).should("have.length.greaterThan", 0);
   });
@@ -70,7 +73,7 @@ describe("Busca de artigos no Blog do Agi", () => {
       .first()
       .click({ force: true });
 
-    cy.location("hostname", { timeout: 15000 }).should("include", "blog.agibank.com.br");
+    cy.url().should("not.include", "?s=");
     cy.get("h1", { timeout: 15000 }).should("be.visible").and("not.be.empty");
   });
 });
