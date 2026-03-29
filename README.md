@@ -88,3 +88,18 @@ npm run cy:open
 ## CI
 
 Ao realizar `push` ou abrir `pull request`, o workflow `Cypress E2E` executa os testes automaticamente no GitHub Actions.
+
+
+---
+
+## ⚠️ Observação Técnica: Intermitência na Exibição de Resultados
+
+Durante a fase de testes, foi identificado um **comportamento intermitente** na funcionalidade de busca do Blog do Agi. Em determinadas execuções, a página de resultados é carregada com o título correto, porém a listagem de artigos não é renderizada, apresentando uma área em branco.
+
+Este cenário foi documentado como um **Ponto de Observação** técnico, pois a falha ocorre de forma aleatória mesmo para busca válidas que funcionaram em tentativas anteriores.
+
+### Evidência em Vídeo
+
+Clique no link abaixo para assistir à gravação da execução:
+
+**[Assistir evidência da execução](https://drive.google.com/file/d/13YW4hIWurY4kbhDwwKjGhZTrrkOwUuQj/view?usp=sharing)**
