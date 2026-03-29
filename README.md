@@ -92,7 +92,7 @@ Ao realizar `push` ou abrir `pull request`, o workflow `Cypress E2E` executa os 
 
 ---
 
-## ⚠️ Observação Técnica: Intermitência na Exibição de Resultados
+## Observação Técnica
 
 Durante a fase de testes, foi identificado um **comportamento intermitente** na funcionalidade de busca do Blog do Agi. Em determinadas execuções, a página de resultados é carregada com o título correto, porém a listagem de artigos não é renderizada, apresentando uma área em branco.
 
